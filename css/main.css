@@ -1,0 +1,15 @@
+:root{
+    /*primary colors*/
+    --primary-green: #61f2f5;
+    --primary-gray: #434a54;
+    --light-gray-primary: #e6e9ed;
+    --dark-gray: #ccd1d9;
+    --dark-gray-primary: #656d78;
+    --dark-gray: #23282d;
+    /*secundary colors*/
+    --secundary-purple: #ac92ec;
+    --secundary-green: #a0d468;
+    /*fonts*/
+    --font-roboto: 'Roboto', sans-serif;
+    --font-roboto-mono: 'Roboto Mono', monospace;
+}
