@@ -68,7 +68,7 @@ body{
 /*-------------------------------------------- header*/
 a{
     text-decoration: none;
-    color: var(--light-gray-primary)
+    color: var(--primary-gray);
 }
 
 header{
@@ -123,6 +123,7 @@ header .header__container--nav .nav--about{
 
 header .header__container--nav .nav--about a{
     font-size: 2rem;
+    font-weight: 500;
     font-family: var(--font-roboto-mono);
 }
 
@@ -131,3 +132,11 @@ header .header__container--nav .nav--about a:hover{
 }
 
 /*-------------------------------------------- main*/
+main{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../assets/images/Cover.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
