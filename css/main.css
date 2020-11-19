@@ -72,7 +72,6 @@ a{
 
 header{
     width: 100vw;
-    min-width: 320px;
     height: 150px;
     display: grid;
     grid-template-rows: 1fr 1fr;
@@ -132,7 +131,6 @@ header .header__container--nav .nav--about a:hover{
 /*-------------------------------------------- main*/
 .main__container{
     width: 100vw;
-    min-width: 320px;
     height: 100%;
     padding: 1em;
     background-image: url('../assets/images/Cover.png');
@@ -178,8 +176,6 @@ main .heading--contain button{
 .main__blogs{
     display: grid;
     width: 100vw;
-    max-width: 900px;
-    min-width: 320px;
     height: auto;
     margin: 0 auto;
 }
