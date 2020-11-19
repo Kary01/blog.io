@@ -28,7 +28,6 @@ html{
 body{
     width: 100vw;
     height: 100vh;
-    overflow: hidden;
     font-family: var(--font-roboto);
 }
 
@@ -133,7 +132,7 @@ header .header__container--nav .nav--about a:hover{
 }
 
 /*-------------------------------------------- main*/
-main{
+.main__container{
     width: 100vw;
     min-width: 320px;
     height: 100vh;
@@ -159,6 +158,7 @@ main .heading--contain h1{
     font-family: var(--font-roboto-mono);
     font-size: 4rem;
     font-weight: 700;
+    letter-spacing: 1px;
     margin-bottom: 1em;
     color: white;
 }
@@ -166,11 +166,95 @@ main .heading--contain h1{
 main .heading--contain button{
     width: 30%;
     max-width: 200px;
-    height: 35px;
+    height: 40px;
+    font-family: var(--font-roboto);
     font-size: 1.4rem;
-    font-weight: 300;
+    font-weight: bold;
     background-color: var(--primary-green);
     color: white;
     border-radius: 5px;
     border: none;
+}
+
+/*-------------------------------------------- main posts*/
+.main__blogs{
+    display: grid;
+    width: 100vw;
+    min-width: 320px;
+}
+
+.main__blogs .main__blogs--container{
+    background-color: var(--light-gray-primary);
+    padding: 0 4em 4em;
+}
+
+.main__blogs .main__blogs--container .blogs--new{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 2fr;
+}
+
+.main__blogs .blogs--new .blogs--image{
+    grid-column: 1;
+}
+
+.main__blogs .blogs--new .blogs--image img{
+    width: 80%;
+}
+
+.main__blogs .blogs--new .blogs--info{
+    grid-column: 2;
+    padding: 1em;
+}
+
+.main__blogs .blogs--new .blogs--info h3{
+    margin-bottom: 1em;
+    font-family: var(--font-roboto-mono);
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.main__blogs .blogs--new .blogs--info p{
+    margin-bottom: 3em;
+    font-size: 1.4rem;
+}
+
+.main__blogs .main__posts--container{
+    padding: 0 4em 4em;
+}
+
+.main__blogs .main__posts--container h3{
+    padding: 2em 0; 
+    margin-bottom: 2em;
+    border-bottom: .1rem solid var(--primary-green);
+    text-align: center;
+    font-family: var(--font-roboto-mono);
+    font-size: 2rem;
+}
+
+.main__blogs .blogs--button{   
+    padding: 1em;
+    color: var(--primary-gray);
+    border: .1rem solid var(--primary-green);
+    border-radius: 3px;
+}  
+
+.main__blogs .blogs--button:hover{   
+    background-color: var(--primary-green);
+    color: white;
+} 
+
+.main__blogs .main__posts--container .posts--container{
+    display: inline-block;
+    padding-left: 1em;
+    max-width: 30%;
+    margin-bottom: 5em;
+}
+
+.main__blogs .posts--container p{
+    margin-bottom: 3em;
+}
+
+.main__blogs .posts--container img{
+    width: 100%;
 }
