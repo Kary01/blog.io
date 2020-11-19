@@ -71,7 +71,7 @@ a{
 }
 
 header{
-    width: 100vw;
+    width: 100vh;
     min-width: 320px;
     height: 150px;
     display: grid;
@@ -101,6 +101,7 @@ header .header__container--icons .social-media::before{
 
 header .header__container--nav{
     display: grid;
+    width: 100vw;
     grid-template-columns: repeat(2, 1fr);
     height: 100px;
 }
@@ -135,7 +136,7 @@ header .header__container--nav .nav--about a:hover{
 .main__container{
     width: 100vw;
     min-width: 320px;
-    height: 100vh;
+    height: 100%;
     padding: 1em;
     background-image: url('../assets/images/Cover.png');
     background-position: center;
@@ -180,12 +181,15 @@ main .heading--contain button{
 .main__blogs{
     display: grid;
     width: 100vw;
+    max-width: 900px;
     min-width: 320px;
+    height: auto;
+    margin: 0 auto;
 }
 
 .main__blogs .main__blogs--container{
     background-color: var(--light-gray-primary);
-    padding: 0 4em 4em;
+    padding: 0 2em 4em;
 }
 
 .main__blogs .main__blogs--container .blogs--new{
@@ -198,20 +202,27 @@ main .heading--contain button{
     grid-column: 1;
 }
 
+.main__blogs .main__blogs--container .blogs--new h3{
+    margin: 1em 0;
+    font-family: var(--font-roboto-mono);
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: .2rem;
+}
+
 .main__blogs .blogs--new .blogs--image img{
     width: 80%;
 }
 
 .main__blogs .blogs--new .blogs--info{
     grid-column: 2;
-    padding: 1em;
 }
 
-.main__blogs .blogs--new .blogs--info h3{
+.main__blogs .blogs--new .blogs--info h4{
     margin-bottom: 1em;
     font-family: var(--font-roboto-mono);
-    font-size: 2.5rem;
-    font-weight: 600;
+    font-size: 2rem;
+    font-weight: 700;
 }
 
 .main__blogs .blogs--new .blogs--info p{
@@ -220,6 +231,7 @@ main .heading--contain button{
 }
 
 .main__blogs .main__posts--container{
+    width: 100vw;
     padding: 0 4em 4em;
 }
 
@@ -230,6 +242,7 @@ main .heading--contain button{
     text-align: center;
     font-family: var(--font-roboto-mono);
     font-size: 2rem;
+    letter-spacing: .2rem;
 }
 
 .main__blogs .blogs--button{   
@@ -251,10 +264,31 @@ main .heading--contain button{
     margin-bottom: 5em;
 }
 
+.main__blogs .posts--container h4{
+    margin: 1em 0; 
+    font-family: var(--font-roboto-mono);
+    font-size: 1.4rem;
+}
+
 .main__blogs .posts--container p{
     margin-bottom: 3em;
+    font-size: 1.2rem;
 }
 
 .main__blogs .posts--container img{
     width: 100%;
+}
+
+/*-------------------------------------------- footer*/
+footer{
+  width: 100vw;
+  height: 80px;
+  background-color: var(--primary-gray);
+  color: white;
+  text-align: center;
+  border-top: 3rem solid var(--primary-green);  
+}
+
+footer p{
+    margin-top: 2em;
 }
