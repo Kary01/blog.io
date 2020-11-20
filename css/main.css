@@ -128,7 +128,7 @@ header .header__container--nav .nav--about a:hover{
     border-bottom: .2rem solid var(--primary-green);
 }
 
-/*-------------------------------------------- main*/
+/*-------------------------------------------- main home*/
 .main__container{
     width: 100vw;
     height: 100%;
@@ -172,7 +172,7 @@ main .heading--contain button{
     border: none;
 }
 
-/*-------------------------------------------- main posts*/
+/*-------------------------------------------- main blogs*/
 .main__blogs{
     display: grid;
     width: 100vw;
@@ -275,6 +275,74 @@ main .heading--contain button{
 
 .main__blogs .posts--container img{
     width: 100%;
+}
+
+/*-------------------------------------------- main post*/
+.main__post .grid--container{
+    max-width: 900px;
+    margin: auto;
+}
+
+.main__post .main__post--image img{
+    width: 100%;
+}
+
+.main__post--container{
+    padding: 0 4em 4em;
+}
+
+.main__post--container h4{
+    padding: 1em 0;
+    border-bottom: .1rem solid var(--dark-gray);
+    font-family: var(--font-roboto-mono);
+    font-size: 1.4rem;
+}
+
+.main__post--container h3{
+    letter-spacing: .2rem;
+    padding: 1em 0;
+    font-family: var(--font-roboto-mono);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.main__post--container p{
+    padding: 1em 0;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.main__contact{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    min-height: 250px;
+    background-color: var(--light-gray-primary);
+    text-align: center;
+    padding: 2em;
+}
+
+.main__contact .main__contact--item img{
+    width: 80px;
+    height: 80px;
+}
+
+.contact--left{
+    grid-row: 2;
+}
+
+.main__contact p{
+    font-family: var(--font-roboto-mono);
+    font-size: 1rem;
+    font-weight: 300;
+    margin-top: 1em;
+}
+
+.main__contact a{
+    font-family: var(--font-roboto-mono);
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-bottom: .1rem solid var(--dark-gray);
 }
 
 /*-------------------------------------------- footer*/
