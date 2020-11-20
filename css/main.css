@@ -312,6 +312,62 @@ main .heading--contain button{
     font-weight: 300;
 }
 
+/*-------------------------------------------- main about*/
+
+.main__about .main__container--profile{
+    padding: 7em 4em;
+    background-color: var(--light-gray-primary);
+}
+
+.main__about .main__container--profile img{
+    width: 300px;
+    margin-right: 2em;
+}
+
+.main__about .main__container--profile .profile--container{
+    display: flex;
+}
+
+.main__about .main__container--profile h2{
+    margin: .5em 0;
+    font-size: 3rem;
+    font-family: var(--font-roboto-mono);
+}
+
+.main__about .main__container--profile p{
+    font-size: 1.2rem;
+    font-family: var(--font-roboto-mono);
+}
+
+.main__about .main__container--projects{
+    padding: 0 5em 4em;
+}
+
+.main__about .main__container--projects h3{
+    padding: 1em 0;
+    border-bottom: .1rem solid var(--dark-gray);
+    font-family: var(--font-roboto-mono);
+    font-size: 1.8rem;
+}
+
+.main__about .projects--box{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 1em 0;
+    padding: 1em;
+    gap: 1em;
+}
+
+.main__about .projects--card p{
+    font-size: 1.4rem;
+}
+
+.main__about .projects--card h4{
+    margin: .5em 0;
+    font-size: 1.6rem;
+    font-family: var(--font-roboto-mono);
+}
+/*-------------------------------------------- main contact*/
 .main__contact{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
