@@ -1,0 +1,30 @@
+@media screen and (max-width: 900px){
+    .main__blogs .main__blogs--container .blogs--new {
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr;
+    }
+    .main__blogs .blogs--new .blogs--image {
+        grid-row: 2;
+    }
+    .main__blogs .blogs--new .blogs--info {
+        grid-column: 1;
+        grid-row: 3;
+    }
+    .main__blogs .main__posts--container .posts--container{
+        max-width: 45%;
+    }
+    .main__about .main__container--profile .profile--container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;   
+    }
+}
+
+@media screen and (max-width: 600px){
+    .main__blogs .main__posts--container .posts--container{
+        max-width: 95%;
+    }
+    .main__about .projects--box{
+       grid-template-columns: 1fr;
+    }
+}

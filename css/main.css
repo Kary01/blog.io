@@ -14,7 +14,6 @@
     --font-roboto-mono: 'Roboto Mono', monospace;
 }
 
-
 *{
     box-sizing: border-box;
     padding: 0;
@@ -315,13 +314,12 @@ main .heading--contain button{
 /*-------------------------------------------- main about*/
 
 .main__about .main__container--profile{
-    padding: 7em 4em;
+    padding: 1em;
     background-color: var(--light-gray-primary);
 }
 
 .main__about .main__container--profile img{
     width: 300px;
-    margin-right: 2em;
 }
 
 .main__about .main__container--profile .profile--container{
@@ -367,6 +365,7 @@ main .heading--contain button{
     font-size: 1.6rem;
     font-family: var(--font-roboto-mono);
 }
+
 /*-------------------------------------------- main contact*/
 .main__contact{
     display: grid;
